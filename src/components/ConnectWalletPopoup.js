@@ -25,19 +25,29 @@ const ConnectWalletPopoup = ({ onClose }) => {
   const [accountAddress, setAccountAddress] = useState("");
   const [isConnected, setIsConnected] = useState(false);
 const [currentAddress, setCurrentAddress] = useState('');
+const [metamaskInstalled, setMetamaskInstalled] = useState(true);
 
   // setAccountAddress  = useContext(AccountContext);
 
 
   const handleConnectWallet = async () => {
     // Check if the site is already connected, if yes return already connected
-    if (window.ethereum && window.ethereum.selectedAddress) {
-      // current address
-      const currentAddress = window.ethereum.selectedAddress;
-      console.log('Already connected with : ',currentAddress);
-      return;
-    }
-    
+    useEffect(() => {
+      const getCurrentAddress = async () => {
+        if (window.ethereum && window.ethereum.selectedAddress) {
+          const address = window.ethereum.selectedAddress;
+          console.log('Already connected with:', address);
+          setCurrentAddress(address);
+        }
+      };
+  
+      if (window.ethereum) {
+        getCurrentAddress();
+      } else {
+        setMetamaskInstalled(false);
+      }
+    }, []);
+    if (window.ethereum) {
     try {
       // const url = "https://polygon-mumbai.g.alchemy.com/v2/jPZqholKXkdi1N3EE7KpZDNNu7wHMF7y"
       // Connect to MetaMask
@@ -64,6 +74,9 @@ const [currentAddress, setCurrentAddress] = useState('');
       console.log('Connected to wallet with : ',accountAddress);
     } catch (err) {
       console.error(err);
+    };
+  } else {
+      console.log('Please install MetaMask!');
     }
   };
 
@@ -100,6 +113,7 @@ const [currentAddress, setCurrentAddress] = useState('');
 
   return (
     <>
+              {metamaskInstalled ? (
       <div className={styles.connectwalletPopoup}>
         <div className={styles.modalSuccess}>
           <div className={styles.nav}>
@@ -163,6 +177,12 @@ const [currentAddress, setCurrentAddress] = useState('');
           </div>
         </div>
       </div>
+        ) : (
+        <div>
+          Metamask is not installed or not available.
+          Please install Metamask to connect your wallet.
+        </div>
+        )}
       {isAccountConnectedPopupOpen && (
         <PortalPopup
           overlayColor="rgba(113, 113, 113, 0.3)"
