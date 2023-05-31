@@ -21,10 +21,11 @@ const Home = () => {
   const [isPairSelectPopupOpen, setPairSelectPopupOpen] = useState(false);
   const [isPairSelectPopup1Open, setPairSelectPopup1Open] = useState(false);
  const [amount, setAmount] = useState(0);
+ const [amount2, setAmount2] = useState(0);
   const [price, setPrice] = useState(0);
   const [isTxnsuccessPopupOpen, setTxnsuccessPopupOpen] = useState(false);
 
-
+  // let amount2 = 0;
   const provider = new ethers.providers.Web3Provider(window.ethereum);
   const signer = provider.getSigner();
   const contractAddress = '<your_contract_address>';
@@ -33,6 +34,9 @@ const Home = () => {
 
   async function handleAmountChange(event) {
     console.log("Amount",amount)
+    const amountSecondary =  event.target.value * 1.0005;
+    console.log("amountSecondary : ", amountSecondary)
+    setAmount2(amountSecondary);
     setAmount( event.target.value);
     // Addresses of the source and destination tokens
     const sourceTokenAddress = '<source_token_address>';
@@ -44,7 +48,30 @@ const Home = () => {
       destinationTokenAddress
     );
     setPrice(newPrice);
+    
+  
   }
+  // Fetch secondary token amount
+// function amountSecondary(amount) {
+//   // const price = 1;
+//   const amountSecondary = amount * 1.1;
+//   console.log("amountSecondary : ", amountSecondary)
+//   return amountSecondary;
+// }
+
+  async function handlePriceChange(event) {
+    setPrice(event.target.value);
+    // Addresses of the source and destination tokens
+    const sourceTokenAddress = '<source_token_address>';
+    const destinationTokenAddress = '<destination_token_address>';
+    // Call the getAmount function with the source and destination token addresses
+    const newAmount = await contract.getAmount(
+      sourceTokenAddress,
+      destinationTokenAddress
+    );
+    setAmount(newAmount);
+  }
+
   const onMenuItemHorizontalitemClick = useCallback(() => {
     navigate("/3exchange");
   }, [navigate]);
@@ -226,7 +253,7 @@ const Home = () => {
                 <div className={styles.label}>USDC</div>
                 <img className={styles.iconbusd} alt="" src="/iconusdc2.svg" />
               </button>
-              <input className={styles.input} type="text" placeholder="0" />
+              <input className={styles.input} type="text" value={amount2}  />
             </div>
           </div>
           <div className={styles.info}>

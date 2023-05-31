@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback, useEffect, useContext } from "react";
 import AccountConnectedPopup from "./AccountConnectedPopup";
 import PortalPopup from "./PortalPopup";
 import styles from "./ConnectWalletPopoup.module.css";
@@ -23,7 +23,7 @@ const ConnectWalletPopoup = ({ onClose }) => {
   const [provider, setProvider] = useState(null);
   const [signer, setSigner] = useState(null);
   const [accountAddress, setAccountAddress] = useState("");
-  setAccountAddress  = useContext(AccountContext);
+  // setAccountAddress  = useContext(AccountContext);
 
 
   const handleConnectWallet = async () => {
