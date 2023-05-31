@@ -1,0 +1,22 @@
+.number,
+.number1 {
+  position: relative;
+  line-height: 24px;
+}
+.number1 {
+  color: var(--white);
+}
+.numberParent {
+  position: absolute;
+  top: 248px;
+  left: 61px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+  text-align: left;
+  font-size: var(--paragraph-regular-size);
+  color: var(--green-5);
+  font-family: var(--paragraph-regular);
+}

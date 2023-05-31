@@ -1,0 +1,39 @@
+.coinIcon {
+  position: relative;
+  width: 52px;
+  height: 32px;
+  flex-shrink: 0;
+}
+.busd {
+  font-weight: 600;
+}
+.usdc {
+  color: var(--gray-10);
+}
+.busdusdc {
+  position: relative;
+  line-height: 28px;
+}
+.iconiconarrowExchangeSwap {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.info,
+.mbListicon6 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.mbListicon6 {
+  position: absolute;
+  top: 128px;
+  left: 61px;
+  text-align: left;
+  font-size: var(--title-1-size);
+  color: var(--white);
+  font-family: var(--paragraph-regular);
+}

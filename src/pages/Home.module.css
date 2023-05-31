@@ -1,0 +1,327 @@
+.bg {
+  position: absolute;
+  top: 0;
+  left: 915px;
+  background-color: var(--gray-21);
+  width: 525px;
+  height: 900px;
+}
+.coinIcon {
+  position: relative;
+  width: 52px;
+  height: 32px;
+  flex-shrink: 0;
+}
+.busd {
+  font-weight: 600;
+}
+.usdc {
+  color: var(--gray-10);
+}
+.busdusdc {
+  position: relative;
+  line-height: 28px;
+}
+.iconiconarrowExchangeSwap {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.mbListicon6,
+.usdc1 {
+  position: absolute;
+  left: 61px;
+}
+.mbListicon6 {
+  top: 128px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+  font-size: var(--title-1-size);
+}
+.usdc1 {
+  top: 184px;
+  font-size: var(--headline-h3-size);
+  line-height: 56px;
+  font-family: var(--headline-h3);
+}
+.number,
+.number1 {
+  position: relative;
+  line-height: 24px;
+}
+.number1 {
+  color: var(--white);
+}
+.info1 {
+  position: absolute;
+  top: 248px;
+  left: 61px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+  color: var(--green-5);
+}
+.btn {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-5xs);
+  background-color: var(--gray-18);
+  border-radius: var(--br-xs);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.iconshare {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.buttonGroup {
+  width: 403px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--gap-5xs);
+}
+.available500 {
+  position: relative;
+  text-decoration: underline;
+  line-height: 24px;
+  text-align: center;
+}
+.title {
+  width: 403px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.iconiconarrowDown {
+  right: 16px;
+  width: 24px;
+  height: 24px;
+}
+.iconbusd,
+.iconiconarrowDown,
+.label {
+  position: absolute;
+  top: calc(50% - 12px);
+}
+.label {
+  left: 48px;
+  font-size: var(--paragraph-regular-size);
+  line-height: 24px;
+  font-weight: 600;
+  font-family: var(--paragraph-regular);
+  color: var(--white);
+  text-align: left;
+}
+.iconbusd {
+  left: 16px;
+  width: 24px;
+  height: 24px;
+}
+.dropdown,
+.input {
+  border: 0;
+  background-color: var(--transparent);
+  height: 56px;
+}
+.dropdown {
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  border-radius: var(--br-base) 0 0 var(--br-base);
+  width: 159px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.input {
+  display: flex;
+  font-family: var(--headline-h3);
+  font-size: var(--font-size-xl);
+  flex: 1;
+  flex-direction: column;
+  padding: var(--padding-base);
+  box-sizing: border-box;
+  align-items: flex-end;
+  justify-content: center;
+}
+.inputGroupwDropdown,
+.pay {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.inputGroupwDropdown {
+  border-radius: var(--br-base);
+  border: 1px solid var(--gray-18);
+  box-sizing: border-box;
+  width: 403px;
+  flex-direction: row;
+}
+.pay {
+  flex-direction: column;
+  gap: var(--gap-5xs);
+}
+.iconiconarrowDown2 {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+.available1200,
+.text {
+  position: relative;
+  line-height: 24px;
+  text-align: center;
+}
+.text {
+  font-size: var(--title-2-size);
+  font-family: var(--paragraph-regular);
+  color: var(--white);
+}
+.btn4,
+.btn5 {
+  display: flex;
+  align-items: center;
+}
+.btn5 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-base);
+  background-color: var(--primary-5);
+  border-radius: var(--br-base);
+  width: 403px;
+  flex-direction: row;
+  box-sizing: border-box;
+  justify-content: center;
+}
+.btn4 {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.dividerhorizontal {
+  position: relative;
+  background-color: var(--gray-18);
+  width: 403px;
+  height: 1px;
+  flex-shrink: 0;
+}
+.cardExchange {
+  position: absolute;
+  top: 128px;
+  left: 952px;
+  border-radius: var(--br-5xl);
+  background-color: var(--gray-20);
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-5xl);
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+  color: var(--gray-10);
+}
+.text1 {
+  position: relative;
+  font-size: var(--paragraph-regular-size);
+  line-height: 24px;
+  font-family: var(--paragraph-regular);
+  color: var(--white);
+  text-align: left;
+}
+.tag {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-9xs) var(--padding-base);
+  background-color: var(--transparent);
+  border-radius: var(--br-xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.tag:focus {
+  background-color: var(--gray-18);
+}
+.tags {
+  position: absolute;
+  top: 240px;
+  left: 718px;
+  width: 173px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.chartChild,
+.chartItem {
+  position: absolute;
+  left: 0;
+}
+.chartChild {
+  top: 0;
+  background-color: var(--gray-21);
+  width: 830px;
+  height: 362px;
+  display: none;
+}
+.chartItem {
+  top: 75.71px;
+  width: 841px;
+  height: 293.5px;
+}
+.chart1 {
+  position: relative;
+  border-radius: var(--br-base);
+  width: 830px;
+  height: 362px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.time {
+  width: 830px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.chart {
+  position: absolute;
+  top: 296px;
+  left: 61px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.home {
+  position: relative;
+  background-color: var(--gray-22);
+  width: 100%;
+  height: 900px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--paragraph-regular-size);
+  color: var(--white);
+  font-family: var(--paragraph-regular);
+}
