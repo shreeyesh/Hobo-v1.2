@@ -58,7 +58,7 @@ const LiquiditySelectToken = () => {
               <img
                 className={styles.iconiconarrowLeft2}
                 alt=""
-                src="/iconiconarrowleft211.svg"
+                src="/iconiconarrowleft21.svg"
               />
               <div className={styles.title}>Select A Pair</div>
             </div>
@@ -69,7 +69,7 @@ const LiquiditySelectToken = () => {
               <img
                 className={styles.iconsearch}
                 alt=""
-                src="/iconsearch11.svg"
+                src="/iconsearch1.svg"
               />
             </div>
             <div className={styles.listTokens}>
@@ -180,14 +180,14 @@ const LiquiditySelectToken = () => {
           iconvftr="/iconvftr11.svg"
           onMenuItemHorizontalitem2Click={onMenuItemHorizontalitem2Click}
           openAccountConnectedPopup={openAccountConnectedPopup}
-          group="/group41.svg"
+          group="/group4.svg"
           groupRight="10.63%"
           groupLeft="10.63%"
           openConnectWalletPopoupPopup={openConnectWalletPopoupPopup}
           groupTop="10.63%"
           groupBottom="10.62%"
           vector="/vector3.svg"
-          iconmenu="/iconmenu1.svg"
+          iconmenu="/iconmenu.svg"
           image3="/image-3@2x.png"
         />
         <div className={styles.myLiquidity}>My Liquidity</div>

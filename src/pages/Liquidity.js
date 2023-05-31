@@ -80,7 +80,7 @@ const Liquidity = () => {
                   <img
                     className={styles.iconiconarrowDown}
                     alt=""
-                    src="/iconiconarrowdown1.svg"
+                    src="/iconiconarrowdown.svg"
                   />
                 </div>
                 <img
@@ -102,7 +102,7 @@ const Liquidity = () => {
                   <img
                     className={styles.iconiconarrowDown}
                     alt=""
-                    src="/iconiconarrowdown1.svg"
+                    src="/iconiconarrowdown.svg"
                   />
                 </div>
               </div>
@@ -114,7 +114,7 @@ const Liquidity = () => {
                 <img
                   className={styles.iconiconarrowDown2}
                   alt=""
-                  src="/iconiconarrowdown1.svg"
+                  src="/iconiconarrowdown.svg"
                 />
               </div>
               <div className={styles.mbListbasic7}>
@@ -183,7 +183,7 @@ const Liquidity = () => {
           groupTop="10.63%"
           groupBottom="10.62%"
           vector="/vector3.svg"
-          iconmenu="/iconmenu1.svg"
+          iconmenu="/iconmenu.svg"
           image3="/image-3@2x.png"
         />
         <div className={styles.action}>

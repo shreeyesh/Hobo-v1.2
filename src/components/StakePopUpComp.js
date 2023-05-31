@@ -14,9 +14,9 @@ const StakePopUpComp = memo(() => {
       <div className={styles.btn}>
         <b className={styles.text}>Stake</b>
       </div>
-      <button className={styles.iconcloseSmall}>
-        <img className={styles.vectorIcon} alt="" src="/vector11.svg" />
-        <img className={styles.vectorIcon} alt="" src="/vector21.svg" />
+      <button className={styles.iconcloseSmall} >
+        <img className={styles.vectorIcon} alt="" src="/vector1.svg" />
+        <img className={styles.vectorIcon} alt="" src="/vector.svg" />
       </button>
       <div className={styles.tabsStyle2Parent}>
         <div className={styles.tabsStyle2}>
@@ -39,8 +39,8 @@ const StakePopUpComp = memo(() => {
               Single-Sided Liquidity Mining
             </p>
             <p className={styles.singleSidedLiquidityMining}>
-              {`First, you need to deposit your tokens into the liquidity pools. Then, use the returned WETH-LP or USDC-LP tokens and stake them to the `}
-              <span className={styles.wethusdc}>WETH/USDC</span> liquidity pool
+              {`First, you need to deposit your tokens into the liquidity pools. Then, use the returned tokens and stake them to the `}
+              <span className={styles.wethusdc}>stCORE/USDC</span> liquidity pool
               on this page.
             </p>
           </div>
@@ -84,17 +84,18 @@ const StakePopUpComp = memo(() => {
                     <img
                       className={styles.iconiconarrowDown}
                       alt=""
-                      src="/iconiconarrowdown1.svg"
+                      src="/iconiconarrowdown.svg"
                     />
-                    <div className={styles.label}>USDC</div>
+                    <div className={styles.label}>CORE</div>
                     <img
                       className={styles.iconusdc}
                       alt=""
-                      src="/iconusdc5.svg"
+                      src="/coreIcon.png"
                     />
                   </div>
                   <div className={styles.input}>
-                    <b className={styles.label1}>0</b>
+                    {/* <b className={styles.label1}>0</b> */}
+                    <input className={styles.input} type="text" placeholder="0" />
                   </div>
                 </div>
               </div>

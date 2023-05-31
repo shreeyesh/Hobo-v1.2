@@ -18,11 +18,11 @@ const Earn = () => {
   const [isStakePopup1Open, setStakePopup1Open] = useState(false);
 
   const onMenuItemHorizontalitemClick = useCallback(() => {
-    navigate("/3exchange");
+    navigate("/exchange");
   }, [navigate]);
 
   const onMenuItemHorizontalitem1Click = useCallback(() => {
-    navigate("/4liquidity");
+    navigate("/liquidity");
   }, [navigate]);
 
   const onMenuItemHorizontalitem2Click = useCallback(() => {
@@ -68,8 +68,8 @@ const Earn = () => {
         <div className={styles.card}>
           <div className={styles.row1}>
             <div className={styles.row11}>
-              <Cardmining />
-              <div className={styles.cardmining}>
+              {/* <Cardmining /> */}
+              {/* <div className={styles.cardmining}>
                 <div className={styles.top}>
                   <div className={styles.iconicon2Coin}>
                     <img
@@ -156,8 +156,8 @@ const Earn = () => {
                     <b className={styles.text}>StakeBUSD</b>
                   </button>
                 </div>
-              </div>
-              <div className={styles.cardmining}>
+              </div> */}
+              {/* <div className={styles.cardmining}>
                 <div className={styles.top}>
                   <div className={styles.iconicon2Coin}>
                     <img
@@ -241,18 +241,19 @@ const Earn = () => {
                     <b className={styles.number}>Stake</b>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className={styles.row11}>
             <CardminingCore
+              rewardToken = "stCORE"
               aprValue="48.9%"
               lockedValue="$925,576.05"
               rate="1 Core = 1 stCore"
               availableBalance="$0"
               rewardValue="$0"
             />
-            <div className={styles.cardmining}>
+            {/* <div className={styles.cardmining}>
               <div className={styles.top}>
                 <div className={styles.iconicon2Coin}>
                   <img className={styles.groupIcon} alt="" src="/group3.svg" />
@@ -340,7 +341,7 @@ const Earn = () => {
                   <b className={styles.number}>Stake</b>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <Nav
@@ -421,8 +422,6 @@ const Earn = () => {
           alt=""
           src="/liquidity--mining-4-1@2x.png"
         />
-        <img className={styles.image4Icon} alt="" src="/image-4@2x.png" />
-        <img className={styles.image5Icon} alt="" src="/image-5@2x.png" />
       </div>
       {isAccountConnectedPopupOpen && (
         <PortalPopup

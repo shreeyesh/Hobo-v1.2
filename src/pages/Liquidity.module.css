@@ -36,6 +36,8 @@
   line-height: 24px;
 }
 .btn {
+  cursor: pointer;
+
   position: absolute;
   top: 328px;
   left: 24px;

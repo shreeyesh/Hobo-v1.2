@@ -46,7 +46,7 @@ const Nav = memo(
               </Link>
               <Link
                 className={styles.menuItemHorizontalitem2}
-                to="/4liquidity"
+                to="/liquidity"
                 onClick={onMenuItemHorizontalitem1Click}
               >
                 <div className={styles.flyout}>

@@ -69,7 +69,7 @@ const CardExchange = memo(({ tokenIn, inValue }) => {
               <img
                 className={styles.iconiconarrowDown}
                 alt=""
-                src="/iconiconarrowdown1.svg"
+                src="/iconiconarrowdown.svg"
               />
               <div className={styles.label}>{tokenIn}</div>
               <img className={styles.iconbusd} alt="" src="/iconbusd.svg" />
@@ -97,7 +97,7 @@ const CardExchange = memo(({ tokenIn, inValue }) => {
               <img
                 className={styles.iconiconarrowDown}
                 alt=""
-                src="/iconiconarrowdown1.svg"
+                src="/iconiconarrowdown.svg"
               />
               <div className={styles.label}>USDC</div>
               <img className={styles.iconbusd} alt="" src="/iconusdc21.svg" />

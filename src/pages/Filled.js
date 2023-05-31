@@ -1,5 +1,5 @@
 import { useState, useCallback } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import AccountConnectedPopup from "../components/AccountConnectedPopup";
 import PortalPopup from "../components/PortalPopup";
 import ConnectWalletPopoup from "../components/ConnectWalletPopoup";
@@ -7,7 +7,9 @@ import Nav from "../components/Nav";
 import TxnsuccessPopup from "../components/TxnsuccessPopup";
 import styles from "./Filled.module.css";
 const Filled = () => {
+  const loc = useLocation();
   const navigate = useNavigate();
+  console.log(loc.state.amount);
   const [isAccountConnectedPopupOpen, setAccountConnectedPopupOpen] =
     useState(false);
   const [isConnectWalletPopoupPopupOpen, setConnectWalletPopoupPopupOpen] =
@@ -69,7 +71,7 @@ const Filled = () => {
           groupTop="10.62%"
           groupBottom="10.63%"
           vector="/vector3.svg"
-          iconmenu="/iconmenu1.svg"
+          iconmenu="/iconmenu.svg"
           image3="/image-3@2x.png"
         />
         <div className={styles.cardExchangeconfirm}>
@@ -78,7 +80,8 @@ const Filled = () => {
               <img
                 className={styles.iconsetting}
                 alt=""
-                src="/iconiconarrowleft211.svg"
+                src="/iconiconarrowleft21.svg"
+                onClick={onMenuItemHorizontalitem2Click}
               />
               <div className={styles.title}>Select Amount</div>
             </div>

@@ -518,7 +518,7 @@ const Unstake2 = () => {
               groupTop="10.63%"
               groupBottom="10.63%"
               vector="/vector3.svg"
-              iconmenu="/iconmenu1.svg"
+              iconmenu="/iconmenu.svg"
               image3="/image-3@2x.png"
             />
             <div className={styles.title}>
@@ -569,7 +569,7 @@ const Unstake2 = () => {
                 <div className={styles.switch}>
                   <div className={styles.text}>My Liquidity Only</div>
                   <div className={styles.switch1}>
-                    <img className={styles.nobIcon} alt="" src="/nob1.svg" />
+                    <img className={styles.nobIcon} alt="" src="/nob.svg" />
                   </div>
                 </div>
                 <div className={styles.dropdown}>
@@ -577,7 +577,7 @@ const Unstake2 = () => {
                   <img
                     className={styles.iconiconarrowDown}
                     alt=""
-                    src="/iconiconarrowdown1.svg"
+                    src="/iconiconarrowdown.svg"
                   />
                 </div>
               </div>
@@ -662,7 +662,7 @@ const Unstake2 = () => {
                           <img
                             className={styles.iconiconarrowDown1}
                             alt=""
-                            src="/iconiconarrowdown1.svg"
+                            src="/iconiconarrowdown.svg"
                           />
                           <div className={styles.label2}>USDC LP</div>
                           <img

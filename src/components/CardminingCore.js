@@ -4,7 +4,7 @@ import StakePopup from "../components/StakePopup";
 import PortalPopup from "../components/PortalPopup";
 
 const CardminingCore = memo(
-  ({ aprValue, lockedValue, rate, availableBalance, rewardValue }) => {
+  ({ rewardToken, aprValue, lockedValue, rate, availableBalance, rewardValue }) => {
     const [isStakePopupOpen, setStakePopupOpen] = useState(false);
 const openStakePopup = useCallback(() => {
   setStakePopupOpen(true);
@@ -16,7 +16,7 @@ const closeStakePopup = useCallback(() => {
       <div className={styles.cardmining}>
         <div className={styles.top}>
           <div className={styles.iconicon2Coin}>
-            <img className={styles.groupIcon} alt="" src="/group1.svg"/>
+            <img className={styles.groupIcon} alt="" src="/coreIcon.png"/>
           </div>
           <div className={styles.tableCelladditionalComponen}>
             <div className={styles.header}> CORE</div>
@@ -37,6 +37,7 @@ const closeStakePopup = useCallback(() => {
           <div className={styles.mbListItemBasic}>
             <div className={styles.mbListItemitemLeft}>
               <div className={styles.caption}>Reward Token</div>
+            <b className={styles.rewardToken}>{rewardToken}</b>
             </div>
             <div className={styles.mbListItemitemRight}>
               <div className={styles.iconicon2Coin1}>

@@ -41,7 +41,7 @@ const Settings = () => {
   }, []);
 
   const onIconiconarrowLeft2Click = useCallback(() => {
-    navigate("/33typing");
+    navigate("/");
   }, [navigate]);
 
   return (
@@ -56,14 +56,14 @@ const Settings = () => {
           iconvftr="/iconvftr11.svg"
           onMenuItemHorizontalitem2Click={onMenuItemHorizontalitem2Click}
           openAccountConnectedPopup={openAccountConnectedPopup}
-          group="/group11.svg"
+          group="/group1.svg"
           groupRight="10.63%"
           groupLeft="10.63%"
           openConnectWalletPopoupPopup={openConnectWalletPopoupPopup}
           groupTop="10.62%"
           groupBottom="10.63%"
           vector="/vector3.svg"
-          iconmenu="/iconmenu1.svg"
+          iconmenu="/iconmenu.svg"
           image3="/image-3@2x.png"
         />
         <div className={styles.cardExchange}>
@@ -73,7 +73,7 @@ const Settings = () => {
                 <img
                   className={styles.iconiconarrowLeft2}
                   alt=""
-                  src="/iconiconarrowleft211.svg"
+                  src="/iconiconarrowleft21.svg"
                   onClick={onIconiconarrowLeft2Click}
                 />
                 <div className={styles.title}>Exchange Settings</div>
@@ -111,7 +111,7 @@ const Settings = () => {
                 <div className={styles.expertMode}>Expert Mode</div>
               </div>
               <button className={styles.switch}>
-                <img className={styles.nobIcon} alt="" src="/nob1.svg" />
+                <img className={styles.nobIcon} alt="" src="/nob.svg" />
               </button>
             </div>
           </div>

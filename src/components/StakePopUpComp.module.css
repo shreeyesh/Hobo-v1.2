@@ -12,8 +12,10 @@
   line-height: 24px;
 }
 .btn {
+  cursor: pointer;
+
   position: absolute;
-  top: 544px;
+  top: 555px;
   left: 24px;
   border-radius: var(--br-xs);
   background-color: var(--primary-5);

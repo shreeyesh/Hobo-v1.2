@@ -127,6 +127,7 @@
 }
 .amountStake,
 .btn {
+  cursor: pointer;
   position: absolute;
   left: 24px;
   display: flex;
@@ -139,6 +140,8 @@
   gap: var(--gap-base);
 }
 .btn {
+  cursor: pointer;
+
   top: 560px;
   border-radius: var(--br-xs);
   background-color: var(--primary-1);

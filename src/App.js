@@ -9,7 +9,6 @@ import FrameComponent from "./pages/FrameComponent";
 import Home from "./pages/Home";
 import Exchange from "./pages/Exchange";
 import Settings from "./pages/Settings";
-import Typing from "./pages/Typing";
 import Filled from "./pages/Filled";
 import Liquidity from "./pages/Liquidity";
 import LiquidityEmpty from "./pages/LiquidityEmpty";
@@ -56,10 +55,6 @@ function App() {
         metaDescription = "";
         break;
       case "/settings":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/33typing":
         title = "";
         metaDescription = "";
         break;

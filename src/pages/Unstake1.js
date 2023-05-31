@@ -326,7 +326,7 @@ const Unstake1 = () => {
                     />
                   </div>
                   <div className={styles.tableCelladditionalComponen}>
-                    <div className={styles.header}>DAI-FTR LP</div>
+                    <div className={styles.header}>DAI-CORE LP</div>
                   </div>
                 </div>
                 <div className={styles.frameParent}>
@@ -411,7 +411,7 @@ const Unstake1 = () => {
                     />
                   </div>
                   <div className={styles.tableCelladditionalComponen}>
-                    <div className={styles.header}>FTR-1INCH LP</div>
+                    <div className={styles.header}>CORE-1INCH LP</div>
                   </div>
                 </div>
                 <div className={styles.frameParent}>
@@ -511,12 +511,12 @@ const Unstake1 = () => {
             groupTop="10.63%"
             groupBottom="10.63%"
             vector="/vector3.svg"
-            iconmenu="/iconmenu1.svg"
+            iconmenu="/iconmenu.svg"
             image3="/image-3@2x.png"
           />
           <div className={styles.title}>
             <b className={styles.provideLiquidityEarn}>
-              Provide Liquidity, Earn FTR
+              Provide Liquidity, Earn CORE
             </b>
             <b className={styles.b15}>$105,786,890.44</b>
             <div className={styles.numberParent}>
@@ -562,7 +562,7 @@ const Unstake1 = () => {
               <div className={styles.switch}>
                 <div className={styles.text}>My Liquidity Only</div>
                 <div className={styles.switch1}>
-                  <img className={styles.nobIcon} alt="" src="/nob1.svg" />
+                  <img className={styles.nobIcon} alt="" src="/nob.svg" />
                 </div>
               </div>
               <div className={styles.dropdown}>
@@ -570,7 +570,7 @@ const Unstake1 = () => {
                 <img
                   className={styles.iconiconarrowDown}
                   alt=""
-                  src="/iconiconarrowdown1.svg"
+                  src="/iconiconarrowdown.svg"
                 />
               </div>
             </div>
@@ -617,11 +617,11 @@ const Unstake1 = () => {
             <div className={styles.claimRewards1}>
               <div className={styles.tableCell1}>
                 <div className={styles.tableCelltext}>
-                  <div className={styles.label}>FTR</div>
+                  <div className={styles.label}>CORE</div>
                   <img
                     className={styles.iconftr3}
                     alt=""
-                    src="/iconftr16.svg"
+                    src="/coreIcon.png"
                   />
                 </div>
                 <div className={styles.tableCelltext1}>
@@ -655,7 +655,7 @@ const Unstake1 = () => {
                         <img
                           className={styles.iconiconarrowDown1}
                           alt=""
-                          src="/iconiconarrowdown1.svg"
+                          src="/iconiconarrowdown.svg"
                         />
                         <div className={styles.label2}>USDC LP</div>
                         <img

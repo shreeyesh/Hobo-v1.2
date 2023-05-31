@@ -508,7 +508,7 @@ const Stake2 = () => {
             groupTop="10.63%"
             groupBottom="10.63%"
             vector="/vector3.svg"
-            iconmenu="/iconmenu1.svg"
+            iconmenu="/iconmenu.svg"
             image3="/image-3@2x.png"
           />
           <div className={styles.title}>
@@ -559,7 +559,7 @@ const Stake2 = () => {
               <div className={styles.switch}>
                 <div className={styles.text}>My Liquidity Only</div>
                 <div className={styles.switch1}>
-                  <img className={styles.nobIcon} alt="" src="/nob1.svg" />
+                  <img className={styles.nobIcon} alt="" src="/nob.svg" />
                 </div>
               </div>
               <div className={styles.dropdown}>
@@ -567,7 +567,7 @@ const Stake2 = () => {
                 <img
                   className={styles.iconiconarrowDown}
                   alt=""
-                  src="/iconiconarrowdown1.svg"
+                  src="/iconiconarrowdown.svg"
                 />
               </div>
             </div>

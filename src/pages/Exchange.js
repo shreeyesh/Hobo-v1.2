@@ -59,7 +59,7 @@ const Exchange = () => {
           group="/group6.svg"
           openConnectWalletPopoupPopup={openConnectWalletPopoupPopup}
           vector="/vector3.svg"
-          iconmenu="/iconmenu1.svg"
+          iconmenu="/iconmenu.svg"
           image3="/image-3@2x.png"
         />
         <CardExchange tokenIn="BUSD" />

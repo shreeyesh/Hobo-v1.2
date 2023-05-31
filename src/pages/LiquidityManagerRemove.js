@@ -113,7 +113,7 @@ const LiquidityManagerRemove = () => {
                   <img
                     className={styles.iconiconarrowDown}
                     alt=""
-                    src="/iconiconarrowdown1.svg"
+                    src="/iconiconarrowdown.svg"
                   />
                   <div className={styles.label}>ETH</div>
                   <img className={styles.iconeth} alt="" src="/iconeth5.svg" />
@@ -154,7 +154,7 @@ const LiquidityManagerRemove = () => {
           groupTop="10.63%"
           groupBottom="10.62%"
           vector="/vector3.svg"
-          iconmenu="/iconmenu1.svg"
+          iconmenu="/iconmenu.svg"
           image3="/image-3@2x.png"
         />
         <div className={styles.myLiquidity}>My Liquidity</div>

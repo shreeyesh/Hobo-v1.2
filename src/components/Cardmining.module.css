@@ -148,6 +148,8 @@
   line-height: 24px;
 }
 .btn {
+  cursor: pointer;
+
   flex: 1;
   border-radius: var(--br-xs);
   background-color: var(--primary-5);

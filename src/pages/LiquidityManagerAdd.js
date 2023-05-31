@@ -43,11 +43,11 @@ const LiquidityManagerAdd = () => {
   }, []);
 
   const onDropdownClick = useCallback(() => {
-    navigate("/42liquidityselecttoken");
+    navigate("/liquidityselecttoken");
   }, [navigate]);
 
   const onDropdown1Click = useCallback(() => {
-    navigate("/42liquidityselecttoken");
+    navigate("/liquidityselecttoken");
   }, [navigate]);
 
   const onTabItemstyle2ItemlargeClick = useCallback(() => {
@@ -81,7 +81,7 @@ const LiquidityManagerAdd = () => {
                     <img
                       className={styles.iconiconarrowDown}
                       alt=""
-                      src="/iconiconarrowdown1.svg"
+                      src="/iconiconarrowdown.svg"
                     />
                     <div className={styles.label}>FTR</div>
                     <img
@@ -110,7 +110,7 @@ const LiquidityManagerAdd = () => {
                     <img
                       className={styles.iconiconarrowDown}
                       alt=""
-                      src="/iconiconarrowdown1.svg"
+                      src="/iconiconarrowdown.svg"
                     />
                     <div className={styles.label}>BUSD</div>
                     <img
@@ -142,7 +142,7 @@ const LiquidityManagerAdd = () => {
               <img
                 className={styles.iconiconarrowTop}
                 alt=""
-                src="/iconiconarrowleft211.svg"
+                src="/iconiconarrowleft21.svg"
               />
               <button className={styles.iconshare} onClick={openSharePopup}>
                 <img className={styles.groupIcon} alt="" src="/group61.svg" />
@@ -198,7 +198,7 @@ const LiquidityManagerAdd = () => {
           groupTop="10.63%"
           groupBottom="10.62%"
           vector="/vector3.svg"
-          iconmenu="/iconmenu1.svg"
+          iconmenu="/iconmenu.svg"
           image3="/image-3@2x.png"
         />
         <div className={styles.myLiquidity}>My Liquidity</div>

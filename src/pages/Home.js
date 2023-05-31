@@ -6,8 +6,10 @@ import ConnectWalletPopoup from "../components/ConnectWalletPopoup";
 import Nav from "../components/Nav";
 import SharePopup from "../components/SharePopup";
 import PairSelectPopup from "../components/PairSelectPopup";
+import TxnsuccessPopup from "../components/TxnsuccessPopup";
 import styles from "./Home.module.css";
 import { ethers } from 'ethers';
+
 
 const Home = () => {
   const navigate = useNavigate();
@@ -18,8 +20,10 @@ const Home = () => {
   const [isSharePopupOpen, setSharePopupOpen] = useState(false);
   const [isPairSelectPopupOpen, setPairSelectPopupOpen] = useState(false);
   const [isPairSelectPopup1Open, setPairSelectPopup1Open] = useState(false);
- const [amount, setAmount] = useState('');
-  const [price, setPrice] = useState('');
+ const [amount, setAmount] = useState(0);
+  const [price, setPrice] = useState(0);
+  const [isTxnsuccessPopupOpen, setTxnsuccessPopupOpen] = useState(false);
+
 
   const provider = new ethers.providers.Web3Provider(window.ethereum);
   const signer = provider.getSigner();
@@ -28,9 +32,8 @@ const Home = () => {
   // const contract = new ethers.Contract(contractAddress, contractABI, signer);
 
   async function handleAmountChange(event) {
-    const newAmount = event.target.value;
-    setAmount(newAmount);
-
+    console.log("Amount",amount)
+    setAmount( event.target.value);
     // Addresses of the source and destination tokens
     const sourceTokenAddress = '<source_token_address>';
     const destinationTokenAddress = '<destination_token_address>';
@@ -98,8 +101,20 @@ const Home = () => {
     setPairSelectPopup1Open(false);
   }, []);
 
+  const openTxnsuccessPopup = useCallback(() => {
+    setTxnsuccessPopupOpen(true);
+  }, []);
+
+  const closeTxnsuccessPopup = useCallback(() => {
+    setTxnsuccessPopupOpen(false);
+  }, []);
+
   const onBtn5Click = useCallback(() => {
-    navigate("/orderconfirm");
+    navigate("/orderconfirm",{
+      state:{
+        amount:amount
+      }
+    });
   }, [navigate]);
 
   return (
@@ -223,7 +238,7 @@ const Home = () => {
             />
           </div>
           <div className={styles.btn4}>
-            <button className={styles.btn5} onClick={onBtn5Click}>
+            <button className={styles.btn5} onClick={openTxnsuccessPopup}>
               <b className={styles.text}>Confirm Order</b>
             </button>
             <div className={styles.number}>
@@ -299,6 +314,15 @@ const Home = () => {
           onOutsideClick={closePairSelectPopup1}
         >
           <PairSelectPopup onClose={closePairSelectPopup1} />
+        </PortalPopup>
+      )}
+        {isTxnsuccessPopupOpen && (
+        <PortalPopup
+          overlayColor="rgba(113, 113, 113, 0.3)"
+          placement="Centered"
+          onOutsideClick={closeTxnsuccessPopup}
+        >
+          <TxnsuccessPopup onClose={closeTxnsuccessPopup} />
         </PortalPopup>
       )}
     </>

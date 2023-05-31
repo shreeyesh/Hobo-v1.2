@@ -45,11 +45,11 @@ const LiquidityEmpty = () => {
   }, [navigate]);
 
   const onInputBigIcondefaultClick = useCallback(() => {
-    navigate("/42liquidityselecttoken");
+    navigate("/liquidityselecttoken");
   }, [navigate]);
 
   const onInputBigIcondefault1Click = useCallback(() => {
-    navigate("/42liquidityselecttoken");
+    navigate("/liquidityselecttoken");
   }, [navigate]);
 
   const onInputClick = useCallback(() => {
@@ -103,7 +103,7 @@ const LiquidityEmpty = () => {
                   <img
                     className={styles.iconiconarrowDown}
                     alt=""
-                    src="/iconiconarrowdown1.svg"
+                    src="/iconiconarrowdown.svg"
                   />
                 </button>
                 <img
@@ -128,7 +128,7 @@ const LiquidityEmpty = () => {
                   <img
                     className={styles.iconiconarrowDown}
                     alt=""
-                    src="/iconiconarrowdown1.svg"
+                    src="/iconiconarrowdown.svg"
                   />
                 </button>
               </div>
@@ -140,7 +140,7 @@ const LiquidityEmpty = () => {
                 <img
                   className={styles.iconiconarrowDown2}
                   alt=""
-                  src="/iconiconarrowdown1.svg"
+                  src="/iconiconarrowdown.svg"
                 />
               </button>
               <div className={styles.mbListbasic7}>
@@ -185,14 +185,14 @@ const LiquidityEmpty = () => {
           iconvftr="/iconvftr1.svg"
           onMenuItemHorizontalitem2Click={onMenuItemHorizontalitem2Click}
           openAccountConnectedPopup={openAccountConnectedPopup}
-          group="/group41.svg"
+          group="/group4.svg"
           groupRight="10.62%"
           groupLeft="10.63%"
           openConnectWalletPopoupPopup={openConnectWalletPopoupPopup}
           groupTop="10.63%"
           groupBottom="10.62%"
           vector="/vector3.svg"
-          iconmenu="/iconmenu1.svg"
+          iconmenu="/iconmenu.svg"
           image3="/image-3@2x.png"
         />
         <div className={styles.myLiquidity}>My Liquidity</div>

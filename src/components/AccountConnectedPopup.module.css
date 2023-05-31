@@ -59,6 +59,7 @@
   flex-shrink: 0;
 }
 .btn {
+  cursor: pointer;
   border-radius: var(--br-xs);
   background-color: var(--gray-18);
   display: flex;
