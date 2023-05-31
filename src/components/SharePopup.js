@@ -37,7 +37,7 @@ const SharePopup = ({ onClose }) => {
         />
         <div className={styles.btnParent}>
           <button className={styles.btn} onClick={onClose}>
-            <img className={styles.iconcopy} alt="" src="/iconcopy1.svg" />
+            <img className={styles.iconcopy} alt="" src="/iconcopy.svg" />
           </button>
           <div className={styles.title1}>Copy Link</div>
         </div>

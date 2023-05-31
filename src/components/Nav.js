@@ -1,6 +1,7 @@
-import { memo, useMemo } from "react";
+import { memo, useMemo, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import styles from "./Nav.module.css";
+
 const Nav = memo(
   ({
     onMenuItemHorizontalitemClick,
@@ -28,6 +29,29 @@ const Nav = memo(
         bottom: groupBottom,
       };
     }, [groupRight, groupLeft, groupTop, groupBottom]);
+
+    const [isConnected, setIsConnected] = useState(false);
+    const [currentAddress, setCurrentAddress] = useState('');
+
+    // function CurrentWallet(){
+    //   const currentAddress = window.ethereum.selectedAddress;
+    //   console.log('Already connected with : ',currentAddress);
+    //   setIsConnected(true);
+    //   return currentAddress;
+    // }
+    // const currentAddress = CurrentWallet();
+    useEffect(() => {
+      const getCurrentAddress = () => {
+        if (window.ethereum && window.ethereum.selectedAddress) {
+          const address = window.ethereum.selectedAddress;
+          console.log('Already connected with:', address);
+          setIsConnected(true);
+          setCurrentAddress(address);
+        }
+      };
+
+      getCurrentAddress();
+    }, []);
 
     return (
       <div className={styles.nav}>
@@ -147,7 +171,9 @@ const Nav = memo(
                 className={styles.tag}
                 onClick={openConnectWalletPopoupPopup}
               >
-                <div className={styles.text}>Connect to a wallet</div>
+                <div className={styles.text} >
+                {isConnected ? 'Connected' : 'Connect to a wallet'}</div>
+                {/* {isConnected && <div>{currentAddress}</div>} */}
               </button>
             </div>
             <button className={styles.btn}>

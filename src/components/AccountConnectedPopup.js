@@ -3,8 +3,18 @@ import AccountContext from './AccountContext';
 import React, { useContext } from "react";
 
 const AccountConnectedPopup = ({ onClose }) => {
-  const { accountAddress } = useContext(AccountContext);
-  console.log("account : ",accountAddress)
+  // const { accountAddress } = useContext(AccountContext);
+  const currentAddress = window.ethereum.selectedAddress;
+  console.log("currentAddress : ",currentAddress)
+  // console.log("account : ",accountAddress)
+
+  // Disconnect Account
+  const handleDisconnectWallet = async () => {
+    // logic to disconnect wallet
+    await window.ethereum.disconnect();
+    console.log('Wallet disconnected');
+    onClose();
+  }
 
   return (
     <div className={styles.accountconnectedPopup}>
@@ -26,7 +36,7 @@ const AccountConnectedPopup = ({ onClose }) => {
               </button>
             </div>
             <div className={styles.xbad7e116Parent}>
-              <b className={styles.xbad7e116}>0xBAD7...E116</b>
+              <b className={styles.xbad7e116}>{currentAddress}</b>
               <div className={styles.btnParent}>
                 <div className={styles.btn}>
                   <img
@@ -55,9 +65,9 @@ const AccountConnectedPopup = ({ onClose }) => {
                   <b className={styles.text}>Switch Wallet</b>
                 </div>
               </div>
-              <div className={styles.btn3}>
+              <button className={styles.btn3} onClick={handleDisconnectWallet}>
                 <b className={styles.text}>Disconnect Wallet</b>
-              </div>
+              </button>
             </div>
           </div>
           <div className={styles.transaction}>

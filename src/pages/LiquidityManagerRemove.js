@@ -83,7 +83,7 @@ const LiquidityManagerRemove = () => {
                       <img
                         className={styles.iconcopy}
                         alt=""
-                        src="/iconcopy1.svg"
+                        src="/iconcopy.svg"
                       />
                     </div>
                   </div>

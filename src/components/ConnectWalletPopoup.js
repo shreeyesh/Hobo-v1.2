@@ -23,6 +23,9 @@ const ConnectWalletPopoup = ({ onClose }) => {
   const [provider, setProvider] = useState(null);
   const [signer, setSigner] = useState(null);
   const [accountAddress, setAccountAddress] = useState("");
+  const [isConnected, setIsConnected] = useState(false);
+const [currentAddress, setCurrentAddress] = useState('');
+
   // setAccountAddress  = useContext(AccountContext);
 
 
@@ -45,6 +48,8 @@ const ConnectWalletPopoup = ({ onClose }) => {
       const signer = provider.getSigner()
       const accountAddress = await signer.getAddress()
       console.log(accountAddress)
+      setIsConnected(true);
+      setCurrentAddress(accountAddress);
       // const provider = new ethers.providers.Web3Provider(window.ethereum);
       // const signer = provider.getSigner();
       // setProvider(provider);

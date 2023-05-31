@@ -352,13 +352,13 @@ const Earn = () => {
           iconvftr="/iconvftr.svg"
           onMenuItemHorizontalitem2Click={onMenuItemHorizontalitem2Click}
           openAccountConnectedPopup={openAccountConnectedPopup}
-          group="/group5.svg"
+          group="/profileButton.svg"
           groupRight="10.62%"
           groupLeft="10.62%"
           openConnectWalletPopoupPopup={openConnectWalletPopoupPopup}
           groupTop="10.63%"
           groupBottom="10.63%"
-          vector="/vector2.svg"
+          vector="/vector3.svg"
           iconmenu="/iconmenu.svg"
           image3="/image-3@2x.png"
         />
