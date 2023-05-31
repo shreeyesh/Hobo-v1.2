@@ -8,10 +8,15 @@ const StakePopUpComp = memo(() => {
     navigate("/unstake");
   }, [navigate]);
 
+  const onBtn2Click = useCallback(() => {
+    navigate("/endmining");
+  }, [navigate]);
+
+
   return (
     <div className={styles.popUp}>
       <div className={styles.popUpChild} />
-      <div className={styles.btn}>
+      <div className={styles.btn} onClick={onBtn2Click}>
         <b className={styles.text}>Stake</b>
       </div>
       <button className={styles.iconcloseSmall} >
@@ -69,16 +74,16 @@ const StakePopUpComp = memo(() => {
         </div>
         <div className={styles.amountStake}>
           <div className={styles.receive}>
-            <div className={styles.title}>
+            {/* <div className={styles.title}>
               <div className={styles.tab}>Stake</div>
               <div className={styles.available1200}>Available: 1,200</div>
-            </div>
+            </div> */}
             <div className={styles.receive1}>
               <div className={styles.receive2}>
-                <div className={styles.title}>
-                  <div className={styles.text}>Stake</div>
-                  <div className={styles.available12001}>Available: 1,200</div>
-                </div>
+                {/* <div className={styles.title}> */}
+                  {/* <div className={styles.text}>Stake</div> */}
+                  {/* <div className={styles.available12001}>Available: 1,200</div> */}
+                {/* </div> */}
                 <div className={styles.inputGroupwDropdown}>
                   <div className={styles.dropdown}>
                     <img

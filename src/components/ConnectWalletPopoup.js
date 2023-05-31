@@ -3,6 +3,10 @@ import AccountConnectedPopup from "./AccountConnectedPopup";
 import PortalPopup from "./PortalPopup";
 import styles from "./ConnectWalletPopoup.module.css";
 import { ethers } from 'ethers';
+// import AccountContext from './components/AccountContext';
+import AccountContext from './AccountContext';
+
+// const accountAddress = 'example-address';
 // import { useAccount, useConnect, useDisconnect } from 'wagmi'
 // import { InjectedConnector } from 'wagmi/connectors/injected'
 // import { alchemyProvider } from 'wagmi/providers/alchemy'
@@ -19,6 +23,8 @@ const ConnectWalletPopoup = ({ onClose }) => {
   const [provider, setProvider] = useState(null);
   const [signer, setSigner] = useState(null);
   const [accountAddress, setAccountAddress] = useState("");
+  setAccountAddress  = useContext(AccountContext);
+
 
   const handleConnectWallet = async () => {
     // Check if the site is already connected, if yes return already connected
@@ -47,6 +53,8 @@ const ConnectWalletPopoup = ({ onClose }) => {
       // // Get the user's account address
       // const address = await signer.getAddress();
       // setAccountAddress(address);
+          // Display Connected Account in AccountConnectedPopup
+    // setAccountAddress(accountAddress);
 
       console.log('Connected to wallet with : ',accountAddress);
     } catch (err) {

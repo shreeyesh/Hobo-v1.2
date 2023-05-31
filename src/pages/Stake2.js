@@ -41,6 +41,10 @@ const Stake2 = () => {
     setConnectWalletPopoupPopupOpen(false);
   }, []);
 
+  const onBtn2Click = useCallback(() => {
+    navigate("/endmining");
+  }, [navigate]);
+
   return (
     <>
       <div className={styles.stake2}>
@@ -393,7 +397,7 @@ const Stake2 = () => {
                   </div>
                 </div>
                 <div className={styles.bottom2}>
-                  <div className={styles.btn}>
+                  <div className={styles.btn}  onClick={onBtn2Click}>
                     <b className={styles.text}>Stake</b>
                   </div>
                 </div>
@@ -486,7 +490,7 @@ const Stake2 = () => {
                       <b className={styles.text}>Claim</b>
                     </div>
                   </div>
-                  <div className={styles.btn7}>
+                  <div className={styles.btn7}  onClick={onBtn2Click}>
                     <b className={styles.text}>Stake</b>
                   </div>
                 </div>

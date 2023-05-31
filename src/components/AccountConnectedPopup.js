@@ -1,5 +1,11 @@
 import styles from "./AccountConnectedPopup.module.css";
+import AccountContext from './AccountContext';
+import React, { useContext } from "react";
+
 const AccountConnectedPopup = ({ onClose }) => {
+  const { accountAddress } = useContext(AccountContext);
+  console.log("account : ",accountAddress)
+
   return (
     <div className={styles.accountconnectedPopup}>
       <div className={styles.connectedAccountPopup}>

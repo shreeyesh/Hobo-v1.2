@@ -20,12 +20,17 @@ import LiquidityDetails from "./pages/LiquidityDetails";
 import Stake2 from "./pages/Stake2";
 import Unstake1 from "./pages/Unstake1";
 import Unstake2 from "./pages/Unstake2";
-import { useEffect } from "react";
+import { useState,useEffect } from "react";
+import AccountContext from './components/AccountContext';
+import ConnectWalletPopoup from "./components/ConnectWalletPopoup";
+import AccountConnectedPopup from "./components/AccountConnectedPopup";
+
 
 function App() {
   const action = useNavigationType();
   const location = useLocation();
   const pathname = location.pathname;
+  const [accountAddress, setAccountAddress] = useState('');
 
   useEffect(() => {
     if (action !== "POP") {
@@ -119,6 +124,7 @@ function App() {
   }, [pathname]);
 
   return (
+    
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/Earn" element={<Earn />} />
@@ -144,6 +150,14 @@ function App() {
       <Route path="/unstake" element={<Unstake1 />} />
       <Route path="/endmining" element={<Unstake2 />} />
     </Routes>
+    );
+    (
+    <AccountContext.Provider value={{ accountAddress, setAccountAddress }}>
+      <div>
+        <ConnectWalletPopoup />
+        <AccountConnectedPopup />
+      </div>
+    </AccountContext.Provider>
   );
 }
 export default App;
